@@ -1,57 +1,32 @@
-nutritional-label-for-loan-recommendation-system
-==============================
+# Nutritional Label For A Loan Recommendation System
+### Authors:
+Evaristus Ezekwem <br>
+Isaac Heesoek Joo <br>
 
-A project to analyze the interior workings of a loan recommendation system in an effort to promote algorithmic transparency.[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[C[C[D[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C explanability, interpretability and transparency of the internal working of machine learning models.
+### Description
+This is a project for New York University's Responsible Data Science 
+class (DS-GA 3001.009). 
 
-Project Organization
-------------
+Due: May 11th, 2020
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
-
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+#### Repository Structure
+```
+project
+| -- data
+|    | -- processed: location of all intermediate/transformed data
+|         | -- dev: individual-produced intermediate/transformed data
+                    append your netid to anything your store here.
+|         | -- prod: location of the final table(s)
+|    | -- raw: location of the raw data for the project
+| -- models: trained and serialized models (e.g., model_ac4119.pkl)
+| -- notebooks: store your Jupyter Notebooks here.
+|    | -- hsj278: treat this workspace as your own.
+|    |              feel free to add subfolders or files as you see fit.
+|    |              work in a way that enables YOU to succeed.
+|    | -- ece278
+|   
+| -- reporting:
+|    | -- figures: images to place on our final report.
+|    | -- overleaf: (optional submodule location)
+```
+This file structure is derived from [Cookiecutter Project Template](https://drivendata.github.io/cookiecutter-data-science/).
