@@ -1,15 +1,15 @@
 
 #set working directory
 # setwd("F:/Credit scoring")
-setwd("/Users/angelateng/Desktop")
+setwd("C:\\Users\\Eva\\Google Drive\\Admissions\\NYU\\Admitted\\Courses\\DSGA 3001_9 Responsible DS\\Project\\nutritional-label-for-loan-recommendation-system\\data\\raw")
 
-# install.packages('abind')
-# install.packages('zoo')
-# install.packages('xts')
-# install.packages('quantmod')
-# install.packages('ROCR')
-# install.packages("DMwR")
-# library("DMwR")
+install.packages('abind')
+install.packages('zoo')
+install.packages('xts')
+install.packages('quantmod')
+install.packages('ROCR')
+install.packages("DMwR")
+library("DMwR")
 
 test_set <- read.csv("cs-test.csv", header = T)
 sample_entry <- read.csv("sampleEntry.csv", header=T)
