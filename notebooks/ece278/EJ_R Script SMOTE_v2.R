@@ -67,8 +67,10 @@ model <- gbm(
   #keep.data = TRUE,
   verbose = TRUE)
 
-predict <- predict.gbm (model, test, n.trees = 5000, type = "response")
+predict <- predict.gbm (model, test_set, n.trees = 5000, type = "response")
 
+# Save to file
+write.csv(predict,'test_preds_gbm_.csv')
 ################
 # Random Forest
 ################
@@ -76,8 +78,10 @@ require(randomForest)
 data$ydata <- as.factor(data$ydata)
 
 model <- randomForest (ydata ~ ., data, ntree = 250, nodesize = 100)
-predict <- predict (model, test, type = "prob")
+predict <- predict (model, test_set, type = "prob")
 
+# Save to file
+write.csv(predict,'test_preds_randomForest.csv')
 
 ################
 #caret
@@ -90,12 +94,16 @@ data$ydata <- as.factor(data$ydata)
 model <- train (ydata ~ ., data, method = "xxx")
 # replace xxx with a function found in caret
 
-predict <- predict (model, test)
+predict <- predict (model, test_set)
+
+# Save to file
+# write.csv(predict,'test_preds_final.csv')
 
 #################
 # write output
 #################
 
-write.csv(predict, file = "predict.csv", quote = FALSE, row.names = FALSE)
-
+# write.csv(predict, file = "predict.csv", quote = FALSE, row.names = FALSE)
+# Save to file
+write.csv(predict,'test_preds_.csv')
 
